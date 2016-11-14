@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace SPP4
 {
-    class Logger
+    public class Logger
     {
         static void Main(string[] args)
         {
-            string path = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location).ToString();
+            string path = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location).ToString()+"\\AwesomeIgor.exe";
             LoggerAttribute afl = new LoggerAttribute("");
             afl.InjectToAssembly(path);
         }
