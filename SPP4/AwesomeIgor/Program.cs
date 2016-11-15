@@ -11,6 +11,8 @@ namespace AwesomeIgor
         static void Main(string[] args)
         {
             IgorClass Igor = new IgorClass(69);
+            bool isAwesome = Igor.IsAwesome();
+            int smart = Igor.HowSmart();
         }
     }
 }

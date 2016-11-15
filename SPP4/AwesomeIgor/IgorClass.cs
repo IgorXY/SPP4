@@ -17,5 +17,22 @@ namespace AwesomeIgor
         {
             this.magic = magic;
         }
+
+        [Logger.LoggerAttribute("")]
+        public bool IsAwesome()
+        {
+            if (magic == 69)
+                return true;
+            else
+                return false;
+        }
+
+        [Logger.LoggerAttribute("")]
+        public int HowSmart()
+        {
+            return 100;
+        }
+
+
     }
 }
